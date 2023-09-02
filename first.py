@@ -13,8 +13,8 @@ menu = st.sidebar.selectbox(
 if menu == 'BMI Calculator':
     st.subheader('BMI Calculator')
 
-    h = (st.number_input('Choose Your Height (cm)', 1, step=1))/100
-    w = st.number_input('Choose Your Weight (kg)', 1, step=1)
+    h = (st.number_input('Enter Your Height (cm)', 1, step=1))/100
+    w = st.number_input('Enter Your Weight (kg)', 1, step=1)
     bmi = w/(h*h)
 
     btn = st.button('Calculate')
@@ -37,7 +37,7 @@ elif menu == 'Circle Area Calculator':
     st.subheader('Circle Area Calculator')
 
     r = st.number_input('원의 반지름')
-    a = 3.14*r*r
+    a = 3.14*r**2
 
     btn = st.button('Calculate')
     if btn:
