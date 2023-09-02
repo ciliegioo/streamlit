@@ -15,7 +15,7 @@ if menu == 'BMI Calculator':
 
     h = (st.number_input('Enter Your Height (cm)', 1, step=1))/100
     w = st.number_input('Enter Your Weight (kg)', 1, step=1)
-    bmi = w/(h*h)
+    bmi = w/(h**2)
 
     btn = st.button('Calculate')
     if btn:
